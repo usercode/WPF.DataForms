@@ -13,6 +13,6 @@
     <description>$description$</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags></tags>
+    <tags>WPF</tags>
   </metadata>
 </package>
