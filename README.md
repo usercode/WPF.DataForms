@@ -1,6 +1,9 @@
 # WPF.DataForms
 Fluent-based data forms for WPF
 
+https://www.nuget.org/packages/WPF.DataForms
+
+[![nuget](https://img.shields.io/nuget/v/WPF.DataForms.svg)](https://www.nuget.org/packages/WPF.DataForms)
 
 ## Example ##
 
