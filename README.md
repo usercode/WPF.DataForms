@@ -21,5 +21,5 @@ class FileFormMapping : DataFormMapping<FileDetailModule>
 Create a data template:
 
 ```CS
-DataTemplate dataTemplate = new FileFormMapping().CreateTemplate(GuiStates.View);
+DataTemplate dataTemplate = new FileFormMapping().CreateTemplate(GuiState.View);
 ```
