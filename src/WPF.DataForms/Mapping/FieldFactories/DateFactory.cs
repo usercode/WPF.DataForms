@@ -19,7 +19,7 @@ namespace WPF.DataForms.Mapping.FieldFactories
         {
             FrameworkElementFactory element;
 
-            if (context.GuiState == FormState.View)
+            if (context.FormState == FormState.View)
             {
                 element = CreateReadOnlyTextElement(fieldDescription.SelectedDate, fieldDescription.StringFormat);
             }

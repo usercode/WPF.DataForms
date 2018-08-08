@@ -19,6 +19,6 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
         /// <summary>
         /// GuiStates
         /// </summary>
-        FormState GuiState { get; }
+        FormState FormState { get; }
     }
 }

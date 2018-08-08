@@ -16,7 +16,7 @@ namespace WPF.DataForms.Mapping.FieldFactories
     {
         public override FrameworkElementFactory GenerateField(IFactoryContext context, TextBoxDescription fieldDescription)
         {            
-            if (context.GuiState == FormState.View)
+            if (context.FormState == FormState.View)
             {
                 return CreateReadOnlyTextElement(fieldDescription.Text, fieldDescription.StringFormat);
             }

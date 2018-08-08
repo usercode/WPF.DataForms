@@ -15,7 +15,7 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
         public FactoryContext(IDataFormMapping mapping, FormState guiState)
         {
             Mapping = mapping;
-            GuiState = guiState;
+            FormState = guiState;
         }
 
         public IDataFormMapping Mapping { get; }
@@ -23,6 +23,6 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
         /// <summary>
         /// GuiStates
         /// </summary>
-        public FormState GuiState { get; }
+        public FormState FormState { get; }
     }
 }

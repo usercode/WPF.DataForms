@@ -38,7 +38,7 @@ namespace WPF.DataForms
         public DataFormMappingItem<T> TopContent { get; set; }
         public DataFormMappingItem<T> BottomContent { get; set; }
 
-        public DataTemplate CreateTemplate(FormState guiState, DataFormMapperRegion region = DataFormMapperRegion.MainContent)
+        public DataTemplate CreateTemplate(FormState formState, DataFormMapperRegion region = DataFormMapperRegion.MainContent)
         {
             DataTemplate template = new DataTemplate();
 
@@ -66,7 +66,7 @@ namespace WPF.DataForms
 
             IFieldFactory collectionFactory = Context.GetFactory<GroupCollectionDescription>();
 
-            FactoryContext factoryContext = new FactoryContext(this, guiState);
+            FactoryContext factoryContext = new FactoryContext(this, formState);
 
             FrameworkElementFactory mainGrid = collectionFactory.CreateField(factoryContext, form.GroupCollection);
 
