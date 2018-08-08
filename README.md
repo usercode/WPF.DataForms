@@ -60,5 +60,5 @@ class CustomerFormMapping : DataFormMapping<CustomerDetailViewModel>
 4. Create the data template:
 
 ```CS
-viewModel.DataTemplate = new FileFormMapping().CreateTemplate(FormState.View);
+viewModel.DataTemplate = new CustomerFormMapping ().CreateTemplate(FormState.View);
 ```
