@@ -9,11 +9,11 @@ using WPF.DataForms.Mapping.FieldDescriptions.Base;
 namespace WPF.DataForms.Mapping.FieldDescriptions
 {
     /// <summary>
-    /// LabelDefinition
+    /// IdDescription
     /// </summary>
-    public class LabelDescription : FieldDescription
+    public class IdDescription : FieldDescription
     {
-        public LabelDescription(String displayName, String text, String stringFormat = null)
+        public IdDescription(String displayName, String text, String stringFormat = null)
             : base(displayName)
         {
             Text = text;

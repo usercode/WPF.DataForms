@@ -21,13 +21,13 @@ namespace WPF.DataForms
             TopContent = new DataFormMappingItem<T>();
             BottomContent = new DataFormMappingItem<T>();
 
-            CreateMainContent();
+            CreateContent();
         }
 
         /// <summary>
         /// DefineMapping
         /// </summary>
-        public abstract void CreateMainContent();
+        public abstract void CreateContent();
 
         /// <summary>
         /// Context
@@ -38,7 +38,7 @@ namespace WPF.DataForms
         public DataFormMappingItem<T> TopContent { get; set; }
         public DataFormMappingItem<T> BottomContent { get; set; }
 
-        public DataTemplate CreateTemplate(GuiState guiState, DataFormMapperRegion region = DataFormMapperRegion.MainContent)
+        public DataTemplate CreateTemplate(FormState guiState, DataFormMapperRegion region = DataFormMapperRegion.MainContent)
         {
             DataTemplate template = new DataTemplate();
 

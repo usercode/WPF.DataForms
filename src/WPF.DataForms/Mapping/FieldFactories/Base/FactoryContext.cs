@@ -12,7 +12,7 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
     /// <typeparam name="TFieldDescription"></typeparam>
     public class FactoryContext : IFactoryContext
     {
-        public FactoryContext(IDataFormMapping mapping, GuiState guiState)
+        public FactoryContext(IDataFormMapping mapping, FormState guiState)
         {
             Mapping = mapping;
             GuiState = guiState;
@@ -23,6 +23,6 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
         /// <summary>
         /// GuiStates
         /// </summary>
-        public GuiState GuiState { get; }
+        public FormState GuiState { get; }
     }
 }

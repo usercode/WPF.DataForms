@@ -17,9 +17,9 @@ namespace WPF.DataForms.Mapping.FieldFactories
     {
         public override FrameworkElementFactory GenerateField(IFactoryContext context, DateDescription fieldDescription)
         {
-            FrameworkElementFactory element = new FrameworkElementFactory(typeof(DatePicker));
+            FrameworkElementFactory element;
 
-            if (context.GuiState == GuiState.View)
+            if (context.GuiState == FormState.View)
             {
                 element = CreateReadOnlyTextElement(fieldDescription.SelectedDate, fieldDescription.StringFormat);
             }

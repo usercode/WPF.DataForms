@@ -163,6 +163,20 @@ namespace WPF.DataForms
         }
 
         /// <summary>
+        /// Id
+        /// </summary>
+        /// <returns></returns>
+        public static IGroupContainer<T, IdDescription> Id<T>(this IGroupContainer<T> root, String displayName, Expression<PropertyGetter<T>> text, String stringFormat = null)
+        {
+            var item = new IdDescription(
+                        displayName,
+                        PropertyPath.GetPropertyPath(text),
+                        stringFormat);
+            
+            return root.AddDescription(item);
+        }
+
+        /// <summary>
         /// Label
         /// </summary>
         /// <returns></returns>

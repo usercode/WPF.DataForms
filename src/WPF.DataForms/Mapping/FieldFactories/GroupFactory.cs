@@ -157,6 +157,11 @@ namespace WPF.DataForms.Mapping.FieldFactories
                     element.SetValue(FrameworkElement.HorizontalAlignmentProperty, HorizontalAlignment.Left);
                 }
 
+                if(property.Style != null)
+                {
+                    element.SetValue(Control.StyleProperty, property.Style);
+                }
+
                 grid.AppendChild(element);
 
                 row++;

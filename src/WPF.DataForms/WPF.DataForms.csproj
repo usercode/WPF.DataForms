@@ -58,12 +58,14 @@
     <Compile Include="DataFormContext.cs" />
     <Compile Include="DataFormMappingItem.cs" />
     <Compile Include="DataFormMapperRegion.cs" />
+    <Compile Include="Mapping\FieldDescriptions\IdDescription.cs" />
     <Compile Include="Mapping\FieldExtensions\Base\FieldExtensionDescription.cs" />
     <Compile Include="Mapping\FieldExtensions\BorderFieldExtensions.cs" />
     <Compile Include="Mapping\FieldExtensions\Base\IFieldExtensionDescription.cs" />
     <Compile Include="Mapping\FieldExtensions\Base\IFieldExtensionFactory~.cs" />
     <Compile Include="Mapping\FieldExtensions\Base\IFieldExtensionFactory.cs" />
-    <Compile Include="GuiState.cs" />
+    <Compile Include="FormState.cs" />
+    <Compile Include="Mapping\FieldFactories\IdFactory.cs" />
     <Compile Include="Util\PropertyGetter.cs" />
     <Compile Include="Mapping\Adapters\GroupAdapter.cs" />
     <Compile Include="Mapping\FieldDescriptions\Base\IFieldDescription.cs" />

@@ -12,6 +12,6 @@ namespace WPF.DataForms
     {
         DataFormContext Context { get; }
 
-        DataTemplate CreateTemplate(GuiState guiState, DataFormMapperRegion region = DataFormMapperRegion.MainContent);
+        DataTemplate CreateTemplate(FormState guiState, DataFormMapperRegion region = DataFormMapperRegion.MainContent);
     }
 }

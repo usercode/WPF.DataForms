@@ -16,9 +16,10 @@ namespace WPF.DataForms.Mapping.FieldFactories
         public override FrameworkElementFactory GenerateField(IFactoryContext context, CheckBoxDescription fieldDescription)
         {
             FrameworkElementFactory root = new FrameworkElementFactory(typeof(CheckBox));
-            root.SetValue(Control.MarginProperty, new Thickness(2));
+            root.SetValue(CheckBox.MarginProperty, new Thickness(2));            
+            root.SetValue(CheckBox.IsEnabledProperty, context.GuiState != FormState.View);
             root.SetBinding(CheckBox.IsCheckedProperty, new Binding(fieldDescription.IsChecked) { Mode = BindingMode.TwoWay });
-            
+
             return root;
         }
 

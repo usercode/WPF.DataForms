@@ -12,17 +12,6 @@ using WPF.DataForms.Mapping.FieldExtensions.Base;
 namespace WPF.DataForms.Mapping.FieldDescriptions.Base
 {
     /// <summary>
-    /// ReadOnlyMode
-    /// </summary>
-    public enum ReadOnlyMode
-    {
-        Normal,
-        Revert,
-        AlwaysReadOnly,
-        NeverReadOnly
-    }
-
-    /// <summary>
     /// PropertyDefinition
     /// </summary>
     public abstract class FieldDescription : IFieldDescription
@@ -42,15 +31,13 @@ namespace WPF.DataForms.Mapping.FieldDescriptions.Base
         {
             DisplayName = displayName;
             Visibiliy = visible;
-            ReadOnlyMode = ReadOnlyMode.Normal;
         }
-        
-        public bool IsVerticalStretched { get; set; }
 
         /// <summary>
-        /// ReadOnlyMode
+        /// IsVerticalStretched
         /// </summary>
-        public ReadOnlyMode ReadOnlyMode { get; set; }
+        public bool IsVerticalStretched { get; set; }
+        
 
         /// <summary>
         /// DisplayName
@@ -92,6 +79,14 @@ namespace WPF.DataForms.Mapping.FieldDescriptions.Base
         /// </summary>
         public String StringFormat { get; set; }
 
+        /// <summary>
+        /// Style
+        /// </summary>
+        public Style Style { get; set; }
+
+        /// <summary>
+        /// Extensions
+        /// </summary>
         public IList<IFieldExtensionDescription> Extensions { get; }        
 
         ///// <summary>

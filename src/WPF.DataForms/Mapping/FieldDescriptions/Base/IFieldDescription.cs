@@ -19,11 +19,6 @@ namespace WPF.DataForms.Mapping.FieldDescriptions.Base
         bool IsVerticalStretched { get; set; }
 
         /// <summary>
-        /// ReadOnlyMode
-        /// </summary>
-        ReadOnlyMode ReadOnlyMode { get; set; }
-
-        /// <summary>
         /// DisplayName
         /// </summary>
         String DisplayName { get; set; }
@@ -57,5 +52,10 @@ namespace WPF.DataForms.Mapping.FieldDescriptions.Base
         /// StringFormat
         /// </summary>
         String StringFormat { get; set; }
+
+        /// <summary>
+        /// Style
+        /// </summary>
+        Style Style { get; set; }
     }
 }

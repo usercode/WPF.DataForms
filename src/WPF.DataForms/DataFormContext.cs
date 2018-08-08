@@ -29,8 +29,10 @@ namespace WPF.UI.DataForms
             Instance.Register<GroupCollectionDescription, GroupCollectionFactory>();
             Instance.Register<GroupDescription, GroupFactory>();
 
+            Instance.Register<IdDescription, IdFactory>();
             Instance.Register<ButtonDescription, ButtonFactoy>();
             Instance.Register<LabelDescription, LabelFactory>();
+            Instance.Register<StaticTextDescription, StaticTextFactory>();
             Instance.Register<TextBoxDescription, TextBoxFactoy>();
             Instance.Register<CheckBoxDescription, CheckBoxFactory>();
             Instance.Register<MultiLineTextDescription, MultiLineTextFactory>();

@@ -10,7 +10,7 @@ namespace WPF.DataForms
     /// GuiStates
     /// </summary>
     [Flags]
-    public enum GuiState
+    public enum FormState
     {
         View = 1,
         Create = 2,

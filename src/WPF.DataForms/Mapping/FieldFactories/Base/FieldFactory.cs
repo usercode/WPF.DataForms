@@ -39,7 +39,7 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
         /// CreateReadOnlyTextElement
         /// </summary>
         /// <returns></returns>
-        protected FrameworkElementFactory CreateReadOnlyTextElement(String text, String stringFormat)
+        protected FrameworkElementFactory CreateReadOnlyTextElement(String text, String stringFormat, TextAlignment textAlignment = TextAlignment.Left)
         {
             Binding binding = new Binding(text);
             binding.StringFormat = stringFormat;
@@ -53,6 +53,7 @@ namespace WPF.DataForms.Mapping.FieldFactories.Base
             textbox.SetValue(TextBox.BorderThicknessProperty, new Thickness(0));
             textbox.SetValue(TextBox.MinWidthProperty, 50d);
             textbox.SetValue(TextBox.HorizontalAlignmentProperty, HorizontalAlignment.Stretch);
+            textbox.SetValue(TextBox.TextAlignmentProperty, textAlignment);
             textbox.SetValue(TextBox.IsReadOnlyProperty, true);
 
             return textbox;

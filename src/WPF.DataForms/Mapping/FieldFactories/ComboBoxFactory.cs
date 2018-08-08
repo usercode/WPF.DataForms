@@ -14,9 +14,9 @@ namespace WPF.DataForms.Mapping.FieldFactories
     {
         public override FrameworkElementFactory GenerateField(IFactoryContext context, ComboBoxDescription fieldDescription)
         {
-            FrameworkElementFactory element = new FrameworkElementFactory(typeof(ComboBox));
+            FrameworkElementFactory element;
 
-            if (context.GuiState == GuiState.View)
+            if (context.GuiState == FormState.View)
             {
                 element = CreateReadOnlyTextElement(fieldDescription.SelectedItem, fieldDescription.StringFormat);
             }
