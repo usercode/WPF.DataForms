@@ -7,9 +7,9 @@ using System.Windows.Markup;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WPF.DataForms")]
-[assembly: AssemblyDescription("WPF.DataForms")]
+[assembly: AssemblyDescription("Fluent-based data forms for WPF")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("usercode")]
 [assembly: AssemblyProduct("WPF.DataForms")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
@@ -33,8 +33,8 @@ using System.Windows.Markup;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
 
 
 [assembly: XmlnsDefinition("http://usercode.de/core.ui.util/", "WPF.DataForms")]
