@@ -25,7 +25,7 @@ class CustomerDetailViewModel
     {
         public Customer Customer { get; set; }
         
-        public DataTemplate Template { get; set; }
+        public DataTemplate DataTemplate { get; set; }
         
         //..
     }
